@@ -4,7 +4,7 @@ use ethers::utils::format_ether;
 use std::{env, str::FromStr};
 
 const DEFAULT_RPC: &str = "https://sepolia-rollup.arbitrum.io/rpc";
-const DEFAULT_ADDR: &str = "0x66BD2C13FC975E20f95aC3e7fAC9fBe4401F2317"; // ← 改这里
+const DEFAULT_ADDR: &str = "0x66BD2C13FC975E20f95aC3e7fAC9fBe4401F2317"; 
 
 async fn query(address: Address, rpc_url: &str) -> Result<(U256, String)> {
     let provider = Provider::<Http>::try_from(rpc_url)
