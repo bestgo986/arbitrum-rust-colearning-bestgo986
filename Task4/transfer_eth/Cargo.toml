@@ -1,0 +1,10 @@
+[package]
+name = "transfer_eth"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ethers = { version = "2.0", features = ["rustls"] } # 使用 rustls 以获得更好的兼容性
+tokio = { version = "1", features = ["full"] }
+dotenv = "0.15"
+eyre = "0.6" # 推荐使用的错误处理库，让报错信息更易读
