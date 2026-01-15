@@ -1,0 +1,11 @@
+[package]
+name = "contract_abi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = { version = "2.0", features = ["abigen", "rustls"] }
+eyre = "0.6"
+tokio = { version = "1", features = ["full"] }  # async runtime
+
+hex = "0.4"
